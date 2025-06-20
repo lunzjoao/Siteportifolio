@@ -60,7 +60,7 @@ function App() {
     <>
       <CustomCursor />
       <LavaLamp />
-      <div className="fixed-logo">./Lunz</div>
+      <a href="#hero" className="fixed-logo">./Lunz</a>
       <div className="resume-button-container">
         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
           <FaFileAlt size={20} />
@@ -162,7 +162,9 @@ function App() {
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                   <div className="project-links">
-                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                      <FaGithub size={24} style={{ color: 'white' }} />
+                    </a>
                   </div>
                 </div>
               </FadeInSection>

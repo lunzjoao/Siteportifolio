@@ -30,6 +30,17 @@
     --lavalamp-color: #0a192f;
   }
   
+  /* Estilo para texto selecionado */
+  ::selection {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  ::-moz-selection {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
   *,
   *::before,
   *::after {
@@ -98,6 +109,13 @@
     font-weight: bold;
     color: var(--secondary-color);
     z-index: 1000;
+    text-decoration: none;
+    cursor: none;
+    transition: color 0.3s ease;
+  }
+  
+  .fixed-logo:hover {
+    color: var(--primary-color);
   }
   
   .resume-button-container {
@@ -530,15 +548,4 @@
     .footer-links {
       justify-content: center;
     }
-  }
-
-  /* Estilo para texto selecionado */
-  ::selection {
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-  ::-moz-selection {
-    background-color: #ffffff;
-    color: #000000;
   }

@@ -13,8 +13,12 @@
   position: absolute;
   border-radius: 50%;
   background: var(--lavalamp-color);
-  opacity: 0.8;
-  filter: blur(50px);
+  opacity: 0.95;
+  filter: blur(40px) brightness(1.2);
+  box-shadow: 
+    0 0 80px var(--lavalamp-color),
+    0 0 120px var(--lavalamp-color),
+    0 0 160px var(--lavalamp-color);
 }
 
 .blob:nth-child(1) {
