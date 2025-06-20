@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPython, FaGithub, FaLinkedin, FaArrowDown, FaJava } from 'react-icons/fa'
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPython, FaGithub, FaLinkedin, FaArrowDown, FaJava, FaFileAlt } from 'react-icons/fa'
 import { SiKotlin } from 'react-icons/si'
 import { TypeAnimation } from 'react-type-animation'
 import './App.css'
 import profilePic from './assets/eu.jpg'
+import logo from './assets/logo.png'
 import FadeInSection from './components/FadeInSection'
 import CustomCursor from './components/CustomCursor'
 import ThemeSwitcher from './components/ThemeSwitcher'
@@ -63,7 +64,8 @@ function App() {
       <div className="fixed-logo">./Lunz</div>
       <div className="resume-button-container">
         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
-          Resume
+          <FaFileAlt size={20} />
+          <span>Resume</span>
         </a>
       </div>
       <div className="theme-switcher-container">
@@ -170,7 +172,23 @@ function App() {
         </section>
       </main>
 
-      
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-left">
+            <img src={logo} alt="Lunz Logo" className="footer-logo" />
+            <p>&copy; 2024 Lunz. All rights reserved.</p>
+          </div>
+          <div className="footer-links">
+            <a href="https://github.com/lunzjoao" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <FaGithub size={18} />
+            </a>
+            <a href="https://www.linkedin.com/in/joaopedrolunz/" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <FaLinkedin size={18} />
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
