@@ -174,7 +174,7 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>&copy; 2024 Lunz. All rights reserved.</p>
+          <p>&copy; 2025 Lunz. All rights reserved.</p>
           <div className="footer-links">
             <a href="https://github.com/lunzjoao" target="_blank" rel="noopener noreferrer" className="footer-link">
               <FaGithub size={18} />
