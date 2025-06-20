@@ -4,7 +4,6 @@ import { SiKotlin } from 'react-icons/si'
 import { TypeAnimation } from 'react-type-animation'
 import './App.css'
 import profilePic from './assets/eu.jpg'
-import logo from './assets/logo.png'
 import FadeInSection from './components/FadeInSection'
 import CustomCursor from './components/CustomCursor'
 import ThemeSwitcher from './components/ThemeSwitcher'
@@ -175,10 +174,7 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <div className="footer-left">
-            <img src={logo} alt="Lunz Logo" className="footer-logo" />
-            <p>&copy; 2024 Lunz. All rights reserved.</p>
-          </div>
+          <p>&copy; 2024 Lunz. All rights reserved.</p>
           <div className="footer-links">
             <a href="https://github.com/lunzjoao" target="_blank" rel="noopener noreferrer" className="footer-link">
               <FaGithub size={18} />

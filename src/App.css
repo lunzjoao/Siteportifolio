@@ -471,9 +471,6 @@
     right: 0;
     margin-top: 2rem;
     padding: 0.75rem 0;
-    background: var(--panel-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     z-index: 100;
   }
   
@@ -484,18 +481,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 0.75rem;
-  }
-  
-  .footer-left {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  
-  .footer-logo {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
   }
   
   .footer-content p {
@@ -539,11 +524,6 @@
     .footer-content {
       flex-direction: column;
       text-align: center;
-      gap: 0.5rem;
-    }
-    
-    .footer-left {
-      flex-direction: column;
       gap: 0.5rem;
     }
     

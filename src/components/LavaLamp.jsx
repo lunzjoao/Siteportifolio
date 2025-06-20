@@ -8,6 +8,10 @@ const LavaLamp = () => {
       <div className="blob"></div>
       <div className="blob"></div>
       <div className="blob"></div>
+      <div className="blob"></div>
+      <div className="blob"></div>
+      <div className="blob"></div>
+      <div className="blob"></div>
     </div>
   );
 };
