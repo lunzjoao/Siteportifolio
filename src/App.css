@@ -121,6 +121,7 @@
     font-family: var(--font-family-heading);
     font-weight: 600;
     transition: all 0.3s ease;
+    cursor: none;
   }
   
   .resume-button:hover {
@@ -340,6 +341,7 @@
   .skill-link {
       text-decoration: none;
       color: inherit;
+      cursor: none;
   }
   
   .projects-grid {
@@ -382,6 +384,7 @@
       margin-right: 1.5rem;
       font-weight: 600;
       transition: color 0.3s;
+      cursor: none;
   }
   
   .project-links a:hover {

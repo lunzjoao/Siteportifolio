@@ -2,7 +2,7 @@
     background: none;
     border: none;
     color: var(--text-color);
-    cursor: pointer;
+    cursor: none;
     font-size: 1.25rem;
     display: flex;
     align-items: center;
