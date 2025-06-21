@@ -90,6 +90,7 @@
     font-family: var(--font-family-heading);
     color: var(--secondary-color);
     margin-bottom: 1rem;
+    display: inline-block;
   }
   
   h1 { font-size: 3rem; }
@@ -278,7 +279,30 @@
   }
   
   .social-links a:hover {
-    color: var(--primary-color);
+    color: var(--text-color) !important;
+  }
+  
+  .social-links a:focus {
+    color: var(--text-color) !important;
+  }
+  
+  /* Regra específica para ícones sociais */
+  .social-links a svg {
+    color: inherit !important;
+  }
+  
+  /* Apenas o GitHub brilha branco no hover */
+  .social-links a:first-child:hover svg {
+    color: white !important;
+    filter: brightness(1.5);
+    text-shadow: 0 0 10px white;
+  }
+  
+  /* LinkedIn fica azul e brilha azul no hover */
+  .social-links a:last-child:hover svg {
+    color: #0077b5 !important;
+    filter: brightness(1.5);
+    text-shadow: 0 0 10px #0077b5;
   }
   
   .about-text {
@@ -427,16 +451,16 @@
   
   .custom-cursor {
     position: fixed;
-    width: 40px;
-    height: 40px;
-    background-color: #0055ff;
+    width: 20px;
+    height: 20px;
+    background-color: #7F52FF;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 9998;
-    filter: blur(25px);
-    opacity: 0.8;
-    box-shadow: 0 0 15px 5px #0055ff;
+    filter: blur(8px);
+    opacity: 1;
+    box-shadow: 0 0 15px 5px #7F52FF;
     transition: transform 0.2s ease-out;
   }
   

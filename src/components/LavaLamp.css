@@ -13,83 +13,199 @@
   position: absolute;
   border-radius: 50%;
   background: var(--lavalamp-color);
-  opacity: 0.95;
-  filter: blur(40px) brightness(1.2);
+  opacity: 0.8;
+  filter: blur(35px) brightness(1.1);
   box-shadow: 
-    0 0 80px var(--lavalamp-color),
-    0 0 120px var(--lavalamp-color),
-    0 0 160px var(--lavalamp-color);
+    0 0 100px var(--lavalamp-color),
+    0 0 150px var(--lavalamp-color),
+    0 0 200px var(--lavalamp-color),
+    0 0 250px var(--lavalamp-color);
 }
 
 .blob:nth-child(1) {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   top: -150px;
   left: -150px;
-  animation: move 25s infinite alternate;
+  animation: move1 45s infinite ease-in-out;
 }
 
 .blob:nth-child(2) {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   top: 40%;
   left: 80%;
-  animation: move 30s infinite alternate-reverse;
+  animation: move2 55s infinite ease-in-out;
 }
 
 .blob:nth-child(3) {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   top: 90%;
   left: 5%;
-  animation: move 20s infinite alternate;
+  animation: move3 40s infinite ease-in-out;
 }
 
 .blob:nth-child(4) {
-  width: 350px;
-  height: 350px;
+  width: 150px;
+  height: 150px;
   top: 10%;
   left: 50%;
-  animation: move 35s infinite alternate-reverse;
+  animation: move4 60s infinite ease-in-out;
 }
 
-.blob:nth-child(5) {
-  width: 200px;
-  height: 200px;
-  top: 60%;
-  left: 20%;
-  animation: move 18s infinite alternate;
+@keyframes move1 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  25% { transform: translate(40vw, 20vh) rotate(90deg) scale(1.2); }
+  50% { transform: translate(20vw, 60vh) rotate(180deg) scale(0.8); }
+  75% { transform: translate(60vw, 40vh) rotate(270deg) scale(1.1); }
 }
 
-.blob:nth-child(6) {
-  width: 280px;
-  height: 280px;
-  top: 30%;
+@keyframes move2 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  33% { transform: translate(-30vw, -20vh) rotate(120deg) scale(1.3); }
+  66% { transform: translate(-10vw, 30vh) rotate(240deg) scale(0.9); }
+}
+
+@keyframes move3 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  20% { transform: translate(25vw, -40vh) rotate(72deg) scale(1.4); }
+  40% { transform: translate(50vw, -20vh) rotate(144deg) scale(0.7); }
+  60% { transform: translate(30vw, 20vh) rotate(216deg) scale(1.2); }
+  80% { transform: translate(10vw, 40vh) rotate(288deg) scale(0.8); }
+}
+
+@keyframes move4 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  16% { transform: translate(-40vw, 10vh) rotate(60deg) scale(1.1); }
+  32% { transform: translate(-20vw, -30vh) rotate(120deg) scale(0.9); }
+  48% { transform: translate(20vw, -20vh) rotate(180deg) scale(1.3); }
+  64% { transform: translate(40vw, 30vh) rotate(240deg) scale(0.8); }
+  80% { transform: translate(10vw, 50vh) rotate(300deg) scale(1.2); }
+}
+
+/* Pontinhos brancos */
+.dot {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation: float 20s infinite linear;
+}
+
+.dot:nth-child(5) {
+  top: 15%;
+  left: 25%;
+  animation-delay: 0s;
+}
+
+.dot:nth-child(6) {
+  top: 35%;
+  left: 75%;
+  animation-delay: -5s;
+}
+
+.dot:nth-child(7) {
+  top: 65%;
+  left: 15%;
+  animation-delay: -10s;
+}
+
+.dot:nth-child(8) {
+  top: 85%;
+  left: 65%;
+  animation-delay: -15s;
+}
+
+.dot:nth-child(9) {
+  top: 25%;
+  left: 45%;
+  animation-delay: -2s;
+}
+
+.dot:nth-child(10) {
+  top: 55%;
   left: 85%;
-  animation: move 28s infinite alternate-reverse;
+  animation-delay: -7s;
 }
 
-.blob:nth-child(7) {
-  width: 180px;
-  height: 180px;
+.dot:nth-child(11) {
   top: 75%;
-  left: 60%;
-  animation: move 22s infinite alternate;
+  left: 35%;
+  animation-delay: -12s;
 }
 
-.blob:nth-child(8) {
-  width: 320px;
-  height: 320px;
+.dot:nth-child(12) {
+  top: 45%;
+  left: 5%;
+  animation-delay: -17s;
+}
+
+.dot:nth-child(13) {
+  top: 5%;
+  left: 55%;
+  animation-delay: -3s;
+}
+
+.dot:nth-child(14) {
+  top: 95%;
+  left: 25%;
+  animation-delay: -8s;
+}
+
+.dot:nth-child(15) {
+  top: 15%;
+  left: 85%;
+  animation-delay: -13s;
+}
+
+.dot:nth-child(16) {
+  top: 85%;
+  left: 95%;
+  animation-delay: -18s;
+}
+
+.dot:nth-child(17) {
+  top: 35%;
+  left: 35%;
+  animation-delay: -4s;
+}
+
+.dot:nth-child(18) {
+  top: 65%;
+  left: 75%;
+  animation-delay: -9s;
+}
+
+.dot:nth-child(19) {
+  top: 95%;
+  left: 45%;
+  animation-delay: -14s;
+}
+
+.dot:nth-child(20) {
   top: 5%;
   left: 15%;
-  animation: move 32s infinite alternate-reverse;
+  animation-delay: -19s;
 }
 
-@keyframes move {
-  from {
-    transform: translate(0, 0) rotate(0deg) scale(1);
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
   }
-  to {
-    transform: translate(60vw, 80vh) rotate(360deg) scale(1.3);
+  25% {
+    transform: translate(20px, -15px);
+  }
+  50% {
+    transform: translate(-10px, 25px);
+  }
+  75% {
+    transform: translate(15px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 } 

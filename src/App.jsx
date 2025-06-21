@@ -62,7 +62,7 @@ function App() {
       <LavaLamp />
       <a href="#hero" className="fixed-logo">./Lunz</a>
       <div className="resume-button-container">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+        <a href="/resume.txt" download="resume.txt" className="resume-button">
           <FaFileAlt size={20} />
           <span>Resume</span>
         </a>
