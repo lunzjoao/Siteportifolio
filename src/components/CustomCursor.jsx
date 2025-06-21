@@ -21,11 +21,11 @@ const CustomCursor = () => {
         return;
       }
       
-      // Excluir a seta de scroll do cursor colorido
+      // Seta de scroll - cursor branco
       const scrollArrow = target.closest('.scroll-down-arrow');
       if (scrollArrow) {
-        setIsHovering(false);
-        setCursorColor('');
+        setIsHovering(true);
+        setCursorColor('white');
         return;
       }
       

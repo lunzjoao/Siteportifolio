@@ -116,7 +116,6 @@
   }
   
   .fixed-logo:hover {
-    color: var(--primary-color);
     cursor: white;
   }
   
@@ -194,7 +193,7 @@
   }
   
   .scroll-down-arrow:hover {
-    color: var(--primary-color);
+    /* Removed color change to keep arrow color consistent */
   }
   
   .hero-subtitle-panel {
