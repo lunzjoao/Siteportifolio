@@ -178,12 +178,8 @@ function App() {
         <div className="footer-content">
           <p>&copy; 2025 Lunz. All rights reserved.</p>
           <div className="footer-links">
-            <a href="https://github.com/lunzjoao" target="_blank" rel="noopener noreferrer" className="footer-link">
-              <FaGithub size={18} />
-            </a>
-            <a href="https://www.linkedin.com/in/joaopedrolunz/" target="_blank" rel="noopener noreferrer" className="footer-link">
-              <FaLinkedin size={18} />
-            </a>
+            <FaGithub size={18} />
+            <FaLinkedin size={18} />
           </div>
         </div>
       </footer>

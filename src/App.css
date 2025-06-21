@@ -108,7 +108,7 @@
     left: 20px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: white;
     z-index: 1000;
     text-decoration: none;
     cursor: none;
@@ -117,6 +117,7 @@
   
   .fixed-logo:hover {
     color: var(--primary-color);
+    cursor: white;
   }
   
   .resume-button-container {
@@ -460,7 +461,6 @@
     z-index: 9998;
     filter: blur(12px);
     opacity: 1;
-    box-shadow: 0 0 15px 5px #191970;
     transition: transform 0.2s ease-out;
   }
   

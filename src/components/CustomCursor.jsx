@@ -11,16 +11,28 @@ const CustomCursor = () => {
     };
 
     const onMouseOver = (e) => {
-      if (e.target.closest('a, button, .skill-item, .project-card, h1, h2, h3, p, span, .fixed-logo')) {
+      const target = e.target;
+      
+      // Logo fixo - cursor branco
+      const fixedLogo = target.closest('.fixed-logo');
+      if (fixedLogo) {
         setIsHovering(true);
+        setCursorColor('white');
+        return;
       }
       
-      // Detectar diferentes tipos de elementos para aplicar cores
-      const target = e.target;
+      // Excluir a seta de scroll do cursor colorido
+      const scrollArrow = target.closest('.scroll-down-arrow');
+      if (scrollArrow) {
+        setIsHovering(false);
+        setCursorColor('');
+        return;
+      }
       
       // Ícones sociais
       const socialLink = target.closest('.social-links a');
       if (socialLink) {
+        setIsHovering(true);
         const isGitHub = socialLink.querySelector('svg[data-icon="github"]') || 
                         socialLink.href.includes('github');
         const isLinkedIn = socialLink.querySelector('svg[data-icon="linkedin"]') || 
@@ -34,9 +46,10 @@ const CustomCursor = () => {
         return;
       }
       
-      // Skills
+      // Skills - usar as cores específicas de cada tecnologia
       const skillItem = target.closest('.skill-item');
       if (skillItem) {
+        setIsHovering(true);
         if (skillItem.classList.contains('js')) {
           setCursorColor('#F0DB4F');
         } else if (skillItem.classList.contains('react')) {
@@ -53,54 +66,31 @@ const CustomCursor = () => {
         return;
       }
       
-      // Links gerais
-      const link = target.closest('a');
-      if (link) {
-        setCursorColor('var(--primary-color)');
+      // Links de projetos
+      const projectLink = target.closest('.project-links a');
+      if (projectLink) {
+        setIsHovering(true);
+        setCursorColor('white');
         return;
       }
       
       // Botões
       const button = target.closest('button');
       if (button) {
+        setIsHovering(true);
         setCursorColor('var(--primary-color)');
         return;
       }
       
-      // Títulos
-      const heading = target.closest('h1, h2, h3');
-      if (heading && target === heading) {
-        setCursorColor('var(--secondary-color)');
-        return;
-      }
-      
-      // Projetos
-      const projectCard = target.closest('.project-card');
-      if (projectCard) {
-        setCursorColor('var(--project-glow-color)');
-        return;
-      }
-      
-      // Logo fixo
-      const fixedLogo = target.closest('.fixed-logo');
-      if (fixedLogo) {
-        setCursorColor('var(--primary-color)');
-        return;
-      }
-      
-      // Resetar cor se não estiver sobre nenhum elemento específico
+      // Resetar para elementos não interativos
+      setIsHovering(false);
       setCursorColor('');
     };
 
     const onMouseOut = (e) => {
-      if (e.target.closest('a, button, .skill-item, .project-card, h1, h2, h3, p, span, .fixed-logo')) {
-        setIsHovering(false);
-      }
-      
-      // Resetar cor quando sair dos elementos interativos
-      if (!e.target.closest('a, button, .skill-item, .project-card, h1, h2, h3, .fixed-logo')) {
-        setCursorColor('');
-      }
+      // Resetar quando sair dos elementos interativos
+      setIsHovering(false);
+      setCursorColor('');
     };
     
     document.addEventListener('mousemove', onMouseMove);
