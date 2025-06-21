@@ -120,10 +120,10 @@ const CustomCursor = () => {
       style={{ 
         left: `${position.x}px`, 
         top: `${position.y}px`,
-        backgroundColor: cursorColor || '#7F52FF',
+        backgroundColor: cursorColor || '#191970',
         boxShadow: cursorColor ? 
           `0 0 3px ${cursorColor}, 0 0 6px ${cursorColor}, 0 0 9px ${cursorColor}, 0 0 12px ${cursorColor}, 0 0 15px ${cursorColor}, 0 0 18px ${cursorColor}, 0 0 21px ${cursorColor}, 0 0 24px ${cursorColor}, 0 0 27px ${cursorColor}, 0 0 30px ${cursorColor}, 0 0 33px ${cursorColor}, 0 0 36px ${cursorColor}` : 
-          '0 0 3px #7F52FF, 0 0 6px #7F52FF, 0 0 9px #7F52FF, 0 0 12px #7F52FF, 0 0 15px #7F52FF, 0 0 18px #7F52FF, 0 0 21px #7F52FF, 0 0 24px #7F52FF, 0 0 27px #7F52FF, 0 0 30px #7F52FF, 0 0 33px #7F52FF, 0 0 36px #7F52FF'
+          '0 0 3px #191970, 0 0 6px #191970, 0 0 9px #191970, 0 0 12px #191970, 0 0 15px #191970, 0 0 18px #191970, 0 0 21px #191970, 0 0 24px #191970, 0 0 27px #191970, 0 0 30px #191970, 0 0 33px #191970, 0 0 36px #191970'
       }}
     />
   );

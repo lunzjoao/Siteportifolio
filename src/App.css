@@ -453,14 +453,14 @@
     position: fixed;
     width: 20px;
     height: 20px;
-    background-color: #7F52FF;
+    background-color: #191970;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 9998;
-    filter: blur(8px);
+    filter: blur(12px);
     opacity: 1;
-    box-shadow: 0 0 15px 5px #7F52FF;
+    box-shadow: 0 0 15px 5px #191970;
     transition: transform 0.2s ease-out;
   }
   
