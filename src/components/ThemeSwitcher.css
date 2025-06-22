@@ -1,8 +1,8 @@
 .theme-switcher {
-    background: none;
-    border: none;
-    color: var(--text-color);
-    cursor: none;
+    background: none !important;
+    border: none !important;
+    color: white !important;
+    cursor: none !important;
     font-size: 1.25rem;
     display: flex;
     align-items: center;
@@ -12,9 +12,66 @@
 }
 
 .theme-switcher:hover {
-    color: white;
+    color: white !important;
+    opacity: 0.8;
+}
+
+.theme-switcher svg {
+    color: white !important;
+}
+
+.theme-switcher:hover svg {
+    color: white !important;
+}
+
+/* Regras ainda mais específicas */
+button.theme-switcher {
+    color: white !important;
+}
+
+button.theme-switcher:hover {
+    color: white !important;
+}
+
+button.theme-switcher svg {
+    color: white !important;
+}
+
+button.theme-switcher:hover svg {
+    color: white !important;
+}
+
+body.dark-mode .theme-switcher {
+    color: white !important;
 }
 
 body.dark-mode .theme-switcher:hover {
-    color: white;
+    color: white !important;
+    opacity: 0.8;
+}
+
+body.dark-mode .theme-switcher svg {
+    color: white !important;
+}
+
+body.dark-mode .theme-switcher:hover svg {
+    color: white !important;
+}
+
+/* Regras para modo claro */
+body.light-mode .theme-switcher {
+    color: white !important;
+}
+
+body.light-mode .theme-switcher:hover {
+    color: white !important;
+    opacity: 0.8;
+}
+
+body.light-mode .theme-switcher svg {
+    color: white !important;
+}
+
+body.light-mode .theme-switcher:hover svg {
+    color: white !important;
 } 

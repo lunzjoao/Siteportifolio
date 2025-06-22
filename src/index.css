@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #007bff;
+  --primary-color: #ffffff;
   --secondary-color: #1a253c;
   --background-color: #f8f9fa;
   --text-color: #343a40;
@@ -8,14 +8,14 @@
   --card-border: #e9ecef;
   --panel-bg: transparent;
   --panel-border: rgba(0, 0, 0, 0.1);
-  --about-glow-color: #1c3ff9;
+  --about-glow-color: #ffffff;
   --project-glow-color: #ffffff;
   --lavalamp-color: #0a192f;
   --font-family: 'Poppins', sans-serif;
 }
 
 body.dark-mode {
-  --primary-color: #007bff;
+  --primary-color: #ffffff;
   --secondary-color: #e9ecef;
   --background-color: #121212;
   --text-color: #adb5bd;
@@ -24,7 +24,7 @@ body.dark-mode {
   --card-border: #374151;
   --panel-bg: transparent;
   --panel-border: rgba(255, 255, 255, 0.15);
-  --about-glow-color: #4f6dff;
+  --about-glow-color: #ffffff;
   --project-glow-color: #ffffff;
   --lavalamp-color: #0a192f;
 }

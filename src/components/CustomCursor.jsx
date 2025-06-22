@@ -78,7 +78,20 @@ const CustomCursor = () => {
       const button = target.closest('button');
       if (button) {
         setIsHovering(true);
-        setCursorColor('var(--primary-color)');
+        // Exceção para o theme switcher - usar cursor branco
+        if (button.classList.contains('theme-switcher')) {
+          setCursorColor('white');
+        } else {
+          setCursorColor('var(--primary-color)');
+        }
+        return;
+      }
+      
+      // Botão de resume - cursor branco
+      const resumeButton = target.closest('.resume-button');
+      if (resumeButton) {
+        setIsHovering(true);
+        setCursorColor('white');
         return;
       }
       
